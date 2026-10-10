@@ -147,3 +147,9 @@ vite.config.ts.timestamp-*
 
 # Turbo Repo
 .turbo
+
+# Terraform state files
+*.tfstate*
+
+# macOS system files
+.DS_Store

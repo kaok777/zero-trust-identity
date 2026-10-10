@@ -1,0 +1,22 @@
+# CODEOWNERS
+# Docs: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+#
+# Rules: the LAST matching pattern wins. Paths are case-sensitive.
+# This file must exist on the PR's base branch (main) to take effect.
+#
+# SOLO-MAINTAINER NOTE
+# Code owners are automatically requested for review on every PR that touches
+# what they own. That is all this file does by itself. It becomes a hard merge
+# gate only if "Require review from Code Owners" is switched on in branch
+# protection, and that stays OFF while there is one maintainer, because GitHub
+# does not let an author approve their own PR (see CONTRIBUTING.md, "Review
+# policy"). When a second maintainer joins: turn it on and raise approvals to 1.
+
+# Default owner for everything
+*                   @kaok777
+
+# Security-sensitive paths, listed explicitly so the intent survives
+# when more owners are added.
+/.github/           @kaok777
+/infra/             @kaok777
+/docs/adr/          @kaok777
